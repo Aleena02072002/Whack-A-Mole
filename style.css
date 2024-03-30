@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("img/wallpaper.webp");
+    background-size: cover;
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap; /*wrap ele into multiple lines*/
+
+    background: url("img/soil.png");
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#board div { 
+    width: 180px; /*3x3 --> 540/3*/
+    height: 180px;
+    background-image: url("img/pipe.png");
+    background-size: cover;
+}
+
+#board div img {
+    width: 100px; 
+    height: 100px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+
+}
